@@ -1,7 +1,8 @@
-insert into users(email, password, username) VALUES  ('leonidbars93@gmail.com','pass93','leo93');
-
 select * from users;
 select * from product;
+
+/*Insert new user*/
+insert into users(email, password, username) VALUES  ('leonidbars93@gmail.com','pass93','leo93');
 
 
 insert into product(description, price, title)

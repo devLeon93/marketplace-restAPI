@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/v1")
 public class UserController {
     private final UserRepo userRepository;
     @Autowired
