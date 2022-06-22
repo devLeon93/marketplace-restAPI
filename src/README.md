@@ -51,10 +51,15 @@ In the **resources directory** you are find sql file  **script.sql** for help ru
 **The app will start running at [http://localhost:8085](http://localhost:8085/).**
 
 **GET :    localhost:8080/marketplace/listProducts**
+
 **GET :    localhost:8080/marketplace/viewProduct/{product_id}**
+
 **GET : localhost:8080/product/{pageNo}/{pageSize}**
+
 **POST : localhost:8080/marketplace/createdProduct**
+
 **PUT :   localhost:8080/marketplace/editProduct/{product_id}**
+
 **DELETE : localhost:8080/deleteProductById/{product_id}**
 
 ## User Endpoints
