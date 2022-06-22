@@ -26,18 +26,31 @@ java -jar target/marketplace-0.0.1-SNAPSHOT.jar
 ```
 
 ## Вatabase configuration
+
 Enter following at the command line:
+
 **psql -U postgres**
+
 Enter your password from DB Server PostgreSQL:
+
 **Password for user postgres:** ******************
+
 **postgres=#  create database marketplace_db;**
+
 **CREATE DATABASE**
+
 Create user and password for db:
+
 **postgres=# create user xxxxx  with encrypted password '*******';**
+
 **CREATE ROLE**
+
 Grant privileges:
+
 **postgres=# grant all privileges on database marketplace_db to testuser;**
+
 **GRANT**
+
 After that you will need to connect the database in the IDE IntellijIdea itself or separately in another editor, for example: Data Grip
 In the **resources directory** you are find sql file  **script.sql** for help run script
 
