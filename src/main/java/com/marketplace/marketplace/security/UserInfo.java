@@ -1,6 +1,6 @@
 package com.marketplace.marketplace.security;
 
-import com.marketplace.marketplace.model.Users;
+import com.marketplace.marketplace.models.Users;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

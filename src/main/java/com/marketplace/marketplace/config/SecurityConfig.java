@@ -1,7 +1,7 @@
 package com.marketplace.marketplace.config;
 
 
-import com.marketplace.marketplace.service.UserInfoService;
+import com.marketplace.marketplace.services.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

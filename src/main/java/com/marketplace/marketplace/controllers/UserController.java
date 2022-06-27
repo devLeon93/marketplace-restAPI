@@ -1,22 +1,36 @@
-package com.marketplace.marketplace.controller;
+package com.marketplace.marketplace.controllers;
 
 
-import com.marketplace.marketplace.model.Users;
-import com.marketplace.marketplace.repository.ProductsRepository;
-import com.marketplace.marketplace.repository.UserRepo;
-import com.marketplace.marketplace.security.UserInfo;
-import org.apache.catalina.User;
+import com.marketplace.marketplace.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/users")
 public class UserController {
-    private final UserRepo userRepository;
+
+
+
+    private final UserService userService;
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+  /*  @GetMapping
+    public List<UserDto> getUsers() {
+        return userService.getAllUsers();
+    }*/
+
+
+
+
+
+
+
+
+   /* private final UserRepo userRepository;
     @Autowired
     public UserController(UserRepo userRepository) {
         this.userRepository = userRepository;
@@ -38,7 +52,7 @@ public class UserController {
     public String createNewUser(@RequestBody Users user){
         userRepository.save(user);
         return "The user has been successfully registered";
-    }
+    }*/
 
 }
 

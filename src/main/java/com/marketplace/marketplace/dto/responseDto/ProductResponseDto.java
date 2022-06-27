@@ -1,41 +1,35 @@
-package com.marketplace.marketplace.model;
+package com.marketplace.marketplace.dto.responseDto;
 
+import com.marketplace.marketplace.models.Users;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
-@Entity
-@Table(name = "product")
-public class Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "product_id")
-    private Long productId;
-    @Column(name = "title")
+public class ProductResponseDto {
+
+    private Long id;
     private String title;
-    @Column(name = "description")
     private String description;
-    @Column(name = "price")
     private BigDecimal price;
 
 
-    public Product() {
+
+    public ProductResponseDto() {
     }
 
-    public Product(Long productId, String title, String description, BigDecimal price) {
-        this.productId = productId;
+    public ProductResponseDto(Long id, String title, String description, BigDecimal price) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
     }
 
-
-    public Long getProductId() {
-        return productId;
+    public Long getId() {
+        return id;
     }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -61,6 +55,4 @@ public class Product {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
-
 }
-

@@ -1,8 +1,8 @@
-package com.marketplace.marketplace.service;
+package com.marketplace.marketplace.services;
 
 
-import com.marketplace.marketplace.model.Users;
-import com.marketplace.marketplace.repository.UserRepo;
+import com.marketplace.marketplace.models.Users;
+import com.marketplace.marketplace.repositories.UserRepo;
 import com.marketplace.marketplace.security.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -21,6 +21,8 @@ public class UserInfoService implements UserDetailsService {
     public UserInfoService(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
+
+
 
 
     @Override
