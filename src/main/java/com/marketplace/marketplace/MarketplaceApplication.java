@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
         description = "marketplaceRestAPI"
 ))
 
-/*Access to SWAGGER DOCK API - http://localhost:8080/swagger-ui/index.html#/ */
+/*Access to SWAGGER DOCK API - http://localhost:8085/swagger-ui/index.html#/ */
 
 public class MarketplaceApplication {
 

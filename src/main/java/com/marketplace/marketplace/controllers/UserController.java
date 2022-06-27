@@ -23,13 +23,6 @@ public class UserController {
         return userService.getAllUsers();
     }*/
 
-
-
-
-
-
-
-
    /* private final UserRepo userRepository;
     @Autowired
     public UserController(UserRepo userRepository) {

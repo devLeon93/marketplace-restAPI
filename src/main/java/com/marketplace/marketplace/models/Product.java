@@ -22,9 +22,6 @@ public class Product {
     @ManyToOne
     private Users user;
 
-
-
-
     public Product() {
     }
 

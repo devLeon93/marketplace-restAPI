@@ -2,8 +2,6 @@ package com.marketplace.marketplace.models;
 import javax.persistence.*;
 import java.util.List;
 
-
-
     @Entity
     @Table(name = "Users")
     public class Users {
@@ -22,10 +20,8 @@ import java.util.List;
         @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
         private List<Product> products;
 
-
         public Users() {
         }
-
 
         public Users(Long id, String username, String email, String password, List<Product> products) {
             this.id = id;
